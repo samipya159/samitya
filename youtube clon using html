@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">YouTube</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <button>🔍</button>
+      </div>
+      <div class="user-options">
+        <button>📹</button>
+        <button>🔔</button>
+        <div class="user">U</div>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <ul>
+          <li>🏠 Home</li>
+          <li>🔥 Trending</li>
+          <li>📺 Subscriptions</li>
+          <li>📚 Library</li>
+          <li>🕒 History</li>
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="thumbnail colorful"></div>
+            <div class="video-info">
+              <div class="channel-icon">C</div>
+              <div class="video-details">
+                <h3 class="title">Colorful Video 1</h3>
+                <p class="channel-name">Channel B</p>
+                <p class="views">1M views • 1 day ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail colorful2"></div>
+            <div class="video-info">
+              <div class="channel-icon">C</div>
+              <div class="video-details">
+                <h3 class="title">Colorful Video 2</h3>
+                <p class="channel-name">Channel K</p>
+                <p class="views">500K views • 2 days ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail colorful3"></div>
+            <div class="video-info">
+              <div class="channel-icon">C</div>
+              <div class="video-details">
+                <h3 class="title">Colorful Video 3</h3>
+                <p class="channel-name">Channel J</p>
+                <p class="views">800K views • 3 days ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail colorful4"></div>
+            <div class="video-info">
+              <div class="channel-icon">C</div>
+              <div class="video-details">
+                <h3 class="title">Colorful Video 4</h3>
+                <p class="channel-name">Channel F</p>
+                <p class="views">2M views • 5 days ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div
+              class="sam"
+              img
+              scr="c:\Users\Hp\OneDrive\Desktop\Screenshot 2026-01-27 215155.png"
+            ></div>
+            <div class="thumbnail colorful 5"></div>
+            <div class="video-info">
+              <div class="channel-icon">E</div>
+              <div class="video-details">
+                <h3 class="title">Colorful Video 1</h3>
+                <p class="channel-name">Channel 5</p>
+                <p class="views">5.5M views • 7 day ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail colorful 6"></div>
+            <div class="video-info">
+              <div class="channel-icon">T</div>
+              <div class="video-details">
+                <h3 class="title">Colorful Video 1</h3>
+                <p class="channel-name">Channel 6</p>
+                <p class="views">9 views • 4 day ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail colorful 7"></div>
+            <div class="video-info">
+              <div class="channel-icon">D</div>
+              <div class="video-details">
+                <h3 class="title">Colorful Video 1</h3>
+                <p class="channel-name">Channel 7</p>
+                <p class="views">900kviews • 13 day ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail colorful 8"></div>
+            <div class="video-info">
+              <div class="channel-icon">N</div>
+              <div class="video-details">
+                <h3 class="title">Colorful Video 1</h3>
+                <p class="channel-name">Channel 9</p>
+                <p class="views">1Mviews • 13 day ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail colorful 9"></div>
+            <div class="video-info">
+              <div class="channel-icon">V</div>
+              <div class="video-details">
+                <h3 class="title">Colorful Video 6</h3>
+                <p class="channel-name">Channel 9</p>
+                <p class="views">1.5Mviews • 6 day ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail colorful 10"></div>
+            <div class="video-info">
+              <div class="channel-icon">V</div>
+              <div class="video-details">
+                <h3 class="title">AL MASHI ALI SALAM 6</h3>
+                <p class="channel-name">Channel 35</p>
+                <p class="views">1.5Mviews • 11 day ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail colorful"></div>
+            <div class="video-info">
+              <div class="channel-icon">VH</div>
+              <div class="video-details">
+                <h3 class="title">KHALED BIN WALAT</h3>
+                <p class="channel-name">Channel 35</p>
+                <p class="views">1.5Mviews • 11 day ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+
+    <button Id="plus">+</button> 
+    <button Id="reset">+</button> 
+    <button Id="minus">+</button> 
+  
+    <script>
+     document.getElementById("almashi").addEventListener("click", function () {
+    document.getElementById("oe").innerText = "hello";
+});
+
+      
+    </script>
+  </body>
+</html>
