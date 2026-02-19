@@ -1,0 +1,72 @@
+import React from "react";
+
+function Navbar() {
+  return (
+    <nav style={{ padding: "1rem", background: "#333", color: "#fff" }}>
+      <h2>BikeWorld</h2>
+      <ul style={{ listStyle: "none", display: "flex", gap: "1rem" }}>
+        <li>Home</li>
+        <li>About</li>
+        <li>Shop</li>
+      </ul>
+    </nav>
+  );
+}
+
+function BikeCard({ name, image, price }) {
+  return (
+    <div style={{ border: "1px solid #ccc", padding: "1rem", margin: "1rem" }}>
+      <img src={image} alt={name} style={{ width: "200px" }} />
+      <h3>{name}</h3>
+      <p>${price}</p>
+      <button>Buy Now</button>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer style={{ padding: "1rem", background: "#eee", marginTop: "2rem" }}>
+      <p>&copy; 2026 BikeWorld. All rights reserved.</p>
+    </footer>
+  );
+}
+
+function Home() {
+  const bikes = [
+    {
+      name: "Mountain Bike",
+      image: "mountain.jpg",
+      price: 500,
+    },
+    { name: "Road Bike", image: "road.jpg", price: 700 },
+    {
+      name: "Electric Bike",
+      image: "electric.jpg",
+      price: 1200,
+    },
+  ];
+
+  return (
+    <div style={{ padding: "1rem" }}>
+      <h1>Welcome to BikeWorld</h1>
+      <div style={{ display: "flex" }}>
+        {bikes.map((bike, index) => (
+          <BikeCard key={index} {...bike} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Home />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
